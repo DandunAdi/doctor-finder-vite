@@ -35,6 +35,14 @@ const DoctorListView: FC<{ doctorList: Doctor[] }> = ({ doctorList }) => {
           </div>
         </div>
       ))}
+
+      {doctorList.length === 0 && (
+        <div>
+          <h3 className="text-center text-gray-500">
+            Dokter tidak ditemukan...
+          </h3>
+        </div>
+      )}
     </div>
   );
 };
