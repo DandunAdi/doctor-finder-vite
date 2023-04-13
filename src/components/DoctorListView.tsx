@@ -12,7 +12,7 @@ const DoctorListView: FC<{ doctorList: Doctor[] }> = ({ doctorList }) => {
           <img
             src={doctor.photo.formats.thumbnail}
             alt={"photo " + doctor.name}
-            className="rounded-3xl"
+            className="rounded-3xl w-1/3"
           />
           <div className="h-full flex flex-col">
             <h3 className="font-semibold mb-2 text-lg md:text-xl">
