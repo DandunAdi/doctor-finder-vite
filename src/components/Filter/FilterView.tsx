@@ -12,9 +12,9 @@ const FilterView: FC<{ doctorData: Doctor[] }> = ({ doctorData }) => {
     <section>
       <div className="border border-gray-100 shadow-md rounded-xl mb-8 px-4 py-5">
         <h1 className="text-2xl mb-4 md:text-3xl">Doctor Finder</h1>
-        <div className="md:grid md:grid-cols-3 md:gap-3 md:items-start ">
+        <div className="md:grid md:grid-cols-3 md:gap-3 md:items-start">
           <input
-            className="p-3 rounded-xl mb-5 max-w-sm md:mb-0 text-sm w-full border-gray-300 border outline-primary"
+            className="p-2 rounded-md mb-5 md:mb-0  w-full border-[#CCCCCC] border placeholder-[#808080]"
             type="text"
             placeholder="Nama Dokter"
             onChange={controller.handleChangeKeyword}
@@ -23,28 +23,26 @@ const FilterView: FC<{ doctorData: Doctor[] }> = ({ doctorData }) => {
             isMulti
             name="hospital"
             options={controller.listHospital}
-            className="basic-multi-select"
-            classNamePrefix="select"
             getOptionLabel={(hospital) => hospital.name}
             getOptionValue={(hospital) => hospital.id}
             placeholder="Rumah Sakit"
             value={controller.hospitalFilter}
             onChange={controller.handleChangeHospital}
             noOptionsMessage={() => "Tidak Ada Data"}
+            className="mb-5"
           />
 
           <Select
             isMulti
             name="specialization"
             options={controller.listSpecialization}
-            className="basic-multi-select"
-            classNamePrefix="select"
             getOptionLabel={(specialization) => specialization.name}
             getOptionValue={(specialization) => specialization.id}
             placeholder="Spesialisasi"
             value={controller.specializationFilter}
             onChange={controller.handleChangeSpecialization}
             noOptionsMessage={() => "Tidak Ada Data"}
+            className="mb-5"
           />
         </div>
       </div>

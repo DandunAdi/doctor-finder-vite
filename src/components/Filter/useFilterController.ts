@@ -37,6 +37,7 @@ const useFilterController = (doctorData: Doctor[]) => {
     setSpecializationFilter(e as DoctorSpecialization[]);
   };
 
+  /* -------------------------------- LIFECYCLE ------------------------------- */
   useEffect(() => {
     // NAME FILTER
     const filteredDoctorByName = doctorData.filter((doc) =>

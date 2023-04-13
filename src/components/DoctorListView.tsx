@@ -7,7 +7,7 @@ const DoctorListView: FC<{ doctorList: Doctor[] }> = ({ doctorList }) => {
       {doctorList.map((doctor) => (
         <div
           key={doctor.doctor_id}
-          className="shadow-lg flex items-start rounded-3xl overflow-hidden border border-gray-100 m-4 p-2 gap-2 md:p-4"
+          className="shadow-lg flex items-start rounded-3xl overflow-hidden border border-gray-100 m-4 p-2 gap-2 md:p-4 hover:border-primary"
         >
           <img
             src={doctor.photo.formats.thumbnail}

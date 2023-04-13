@@ -13,7 +13,7 @@ function App() {
   );
 
   return (
-    <div className="max-w-6xl mx-auto py-5 px-4">
+    <div className="max-w-6xl mx-auto py-5 px-4 font-poppins">
       {data?.status && <FilterView doctorData={data.data} />}
     </div>
   );
