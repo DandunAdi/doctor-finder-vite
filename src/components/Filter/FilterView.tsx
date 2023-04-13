@@ -14,7 +14,7 @@ const FilterView: FC<{ doctorData: Doctor[] }> = ({ doctorData }) => {
         <h1 className="text-2xl mb-4 md:text-3xl">Doctor Finder</h1>
         <div className="md:grid md:grid-cols-3 md:gap-3 md:items-start">
           <input
-            className="p-2 rounded-md mb-5 md:mb-0  w-full border-[#CCCCCC] border placeholder-[#808080]"
+            className="py-[6px] px-[9px] rounded-md mb-5 md:mb-0  w-full border-[#CCCCCC] border placeholder-[#808080]"
             type="text"
             placeholder="Nama Dokter"
             onChange={controller.handleChangeKeyword}
